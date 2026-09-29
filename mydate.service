@@ -1,0 +1,10 @@
+[Unit]
+Description=My date logger service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mydate.sh
+
+[Install]
+WantedBy=multi-user.target
